@@ -2,8 +2,8 @@ name: Lint
 
 on:
   push:
-    paths:
-      - 'log_analyzer.py'
+    branches:
+      - homework01
 
 jobs:
   flake8_py3:
