@@ -1,0 +1,47 @@
+<html>
+        <head>
+            <title>Top {report_size} URLs</title>
+
+            <style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 200px;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+        </head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery.tablesorter.min.js"></script>
+        <body>
+            <table class="tablesorter">
+              <thead>
+                <tr>
+                   <th class="header">URL</th>
+                   <th class="header">Count</th>
+                   <th class="header">Count %</th>
+                   <th class="header">Time Avg</th>
+                   <th class="header">Time %</th>
+                   <th class="header">Time Sum</th>
+                   <th class="header">Time Max</th>
+                   <th class="header">Time Med</th>
+                </tr>
+              </thead>
+           $TABLE_ROWS
+          </table>
+            <script>
+                $(document).ready(function() {
+                    $('.tablesorter').tablesorter();
+                });
+            </script>
+      </body>
+  </html>
