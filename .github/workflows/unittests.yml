@@ -10,6 +10,7 @@ permissions:
 
 jobs:
  unittests:
+
    runs-on: ubuntu-latest
    strategy:
      matrix:
@@ -27,3 +28,4 @@ jobs:
    - name: Test with pytest
      run: |
        pytest
+

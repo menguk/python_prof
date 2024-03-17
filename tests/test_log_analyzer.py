@@ -1,4 +1,4 @@
-from .. log_analyzer  import parse_log, generate_report
+from ..log_analyzer import parse_log, generate_report
 
 def test_parse_log():
     test_log_file = 'test_log.txt'
